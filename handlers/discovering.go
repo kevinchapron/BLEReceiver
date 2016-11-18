@@ -2,13 +2,13 @@ package handlers
 
 import (
 	"github.com/paypal/gatt"
-	"github.com/kevinchapron/BLEReceiver"
 	"strings"
 	"fmt"
+	"github.com/kevinchapron/BLEReceiver/settings"
 )
 
 func Discovering(p gatt.Peripheral, a *gatt.Advertisement, rssi int){
-	id_target := strings.ToUpper(BLEReceiver.GetTargetID())
+	id_target := settings.PERIPHERAL_ID
 	id_peripheral := strings.ToUpper(p.ID())
 	if id_peripheral != id_target{
 		fmt.Printf("Discovered Peripheral \"%s\"\n",id_peripheral)

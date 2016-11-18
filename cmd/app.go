@@ -1,13 +1,13 @@
 package main
 
 import (
-	"github.com/kevinchapron/BLEReceiver"
-	"github.com/kevinchapron/BLEReceiver/handlers"
-	"github.com/paypal/gatt"
 	"fmt"
+	"github.com/paypal/gatt"
+	"github.com/kevinchapron/BLEReceiver/handlers"
+	"github.com/kevinchapron/BLEReceiver"
+	"github.com/kevinchapron/BLEReceiver/settings"
 )
 
-var done = make(chan struct{})
 
 func main() {
 	var device gatt.Device = BLEReceiver.InitDevice()
@@ -19,6 +19,6 @@ func main() {
 	)
 
 	device.Init(handlers.StateChanged)
-	<-done
+	<-settings.Done
 	fmt.Printf("End of program\n")
 }
