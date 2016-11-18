@@ -19,7 +19,8 @@ Operation System
 
 This project has been developed to run on Raspberry PI3.
 Cross-Compiling options are : 
-
+* GOOS==linux
+* GOARCH==386
 
 More information
 ----------------
