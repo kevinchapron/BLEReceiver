@@ -6,7 +6,7 @@
 ---
 
 This project is a **GoLang application** designed to be used on a RaspBerry Pi3.
-It connects through BLE (**B**luetooth **L**ow **E**nergy) to a given peripheral.
+It connects through **BLE** (**B**luetooth **L**ow **E**nergy) to a given peripheral.
 It suscribes to characteristics available from Peripheral systems that stream theirs own data.
 
 9 Characteristics are available from peripheral, one for each axis of each device. (9-DOF)
