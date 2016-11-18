@@ -14,19 +14,29 @@ It's a good way to make real-times applications through bluetooth devices
 
 This project runs on **[Paypal/Gatt](https://github.com/paypal/gatt/)**.
 
+Operation System
+----------------
+
+This project has been developed to run on Raspberry PI3.
+Cross-Compiling options are : 
+
+
 More information
----
+----------------
+
 
 This project has been created for my research in the **[LIARA](http://liara.uqac.ca/)** lab 
 (Laboratoire d'Intelligence Ambiante pour la Reconnaissance d'Activités), at the 
 « Université du Québec À Chicoutimi (**[UQAC](http://www.uqac.ca/)**) »
 
 Author
----
+------
+
 **[Kévin CHAPRON](http://kevin-chapron.fr/)** - _2016_
 
 Download
----
+--------
+
 To download and use this project, just use the command below : 
 > ```go get github.com/kevinchapron/BLEReceiver```
 
@@ -34,7 +44,8 @@ To download sources through git, just clone it using the command below :
 > ```git clone https://github.com/kevinchapron/BLEReceiver.git```
 
 License
----
+-------
+
     Copyright 2016 Kévin Chapron
 
     Licensed under the Apache License, Version 2.0 (the "License");
